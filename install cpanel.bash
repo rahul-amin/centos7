@@ -8,4 +8,9 @@ sudo sh latest
 sudo systemctl enable network.service
 sudo systemctl start network.service
 
+
+sudo service NetworkManager start
+sudo chkconfig NetworkManager on
+reboot
+
 #sudo yum autoremove

@@ -22,3 +22,6 @@ firewall-cmd --permanent --add-port=80/tcp
 sudo yum install httpd
 sudo systemctl start httpd.service
 sudo systemctl enable httpd.service
+
+
+sudo nano /etc/phpMyAdmin/config.inc.php

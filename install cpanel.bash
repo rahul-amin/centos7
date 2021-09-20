@@ -1,5 +1,5 @@
-sudo service NetworkManager stop
-sudo chkconfig NetworkManager off
+sudo systemctl stop NetworkManager
+sudo systemctl disable NetworkManager
 
 sudo yum install perl
 sudo yum install curl

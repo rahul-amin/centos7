@@ -15,3 +15,10 @@ sudo systemctl enable mariadb.service
 sudo yum install php php-mysql
 sudo systemctl restart httpd.service
 sudo yum install php-fpm
+
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+sudo yum install httpd
+sudo systemctl start httpd.service
+sudo systemctl enable httpd.service
